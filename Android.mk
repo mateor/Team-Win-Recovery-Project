@@ -88,11 +88,11 @@ LOCAL_MODULE_TAGS := eng
 
 ifeq ($(TARGET_RECOVERY_UI_LIB),)
   LOCAL_SRC_FILES += default_device.cpp
-else
-  LOCAL_STATIC_LIBRARIES += $(TARGET_RECOVERY_UI_LIB)
+#else
+#  LOCAL_STATIC_LIBRARIES += $(TARGET_RECOVERY_UI_LIB)
 endif
 
-LOCAL_C_INCLUDES += system/extras/ext4_utils
+#LOCAL_C_INCLUDES += system/extras/ext4_utils
 
 #TWRP Build Flags
 ifeq ($(BOARD_HAS_NO_REAL_SDCARD), true)
